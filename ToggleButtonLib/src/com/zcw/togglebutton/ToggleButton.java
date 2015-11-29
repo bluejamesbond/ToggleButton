@@ -113,7 +113,38 @@ public class ToggleButton extends View{
 		
 		borderColor = offBorderColor;
 	}
-	
+
+	public void setOffBorderColor(Color color){
+		offBorderColor = color;
+		borderColor = color;
+
+		postInvalidate();
+	}
+
+	public void setOffColor(int color){
+		this.offColor = color;
+
+		postInvalidate();
+	}
+
+	public void setSpotColor(int color){
+		this.spotColor = color;
+
+		postInvalidate();
+	}
+
+	public void setOffColor(int color){
+		this.offColor = color;
+
+		postInvalidate();
+	}
+
+	public void setBorderWidth(int width){
+		this.borderWidth = width;
+
+		postInvalidate();
+	}
+
 	public void toggle() {
 		toggle(true);
 	}
