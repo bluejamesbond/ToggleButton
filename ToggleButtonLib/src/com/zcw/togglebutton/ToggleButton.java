@@ -122,7 +122,7 @@ public class ToggleButton extends View{
 	}
 
 	public void setOnColor(int color){
-		this.offColor = color;
+		this.onColor = color;
 
 		postInvalidate();
 	}
